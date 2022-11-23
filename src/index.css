@@ -23,6 +23,7 @@ body {
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box; 
   user-select: none;
+  cursor: none;
 }
 
 
@@ -50,7 +51,7 @@ html {
 section {
   width: 100vw;
   position: fixed;
-  top: 30px;
+  height: 100vh;
 }
 
 
@@ -58,7 +59,7 @@ section {
   overflow: hidden;
   letter-spacing: -2px;
   line-height: 0.8;
-  margin: 0;
+  margin: 20px auto;
   white-space: nowrap;
   display: flex;
   flex-wrap: nowrap;
@@ -77,4 +78,61 @@ section {
 .parallax span {
   display: block;
   margin-right: 30px;
+}
+
+
+.circle {
+  position: fixed;
+  z-index: 100;
+  display: flex;
+  flex-flow: row;
+  align-content: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  height: 24px;
+  width: 24px;
+  background-color: #D44343;
+  border-radius: 200px;
+  pointer-events: none;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;                                      
+}
+
+.cursorText {
+  flex: auto;
+  font-size: inherit;
+  pointer-events: none;
+  margin: auto;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+}
+
+.container {
+  display: flex;
+  flex-flow: row;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: space-around;
+}
+
+
+.heading {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 1.2;
+  text-decoration: underline;
+  transition: 150ms ease;
+  cursor: pointer;
+}
+
+.sell:hover {
+  color: #D44343;
+}
+
+.buy:hover {
+  color: #29B550;
 }
